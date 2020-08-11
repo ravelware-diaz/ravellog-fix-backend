@@ -1,0 +1,15 @@
+{
+  "development": {
+    "username": "SA",
+    "password": "Ravelware1402",
+    "database": "ravellog_fix_backend",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": { 
+        "encrypt": false,
+        "enableArithAbort": true
+        }    
+    }
+  }
+}
