@@ -8,6 +8,14 @@
         "category": "kanban"
     },
     {
+        "epc_id": "68656c7d",
+        "name": "Ban",
+        "quantity": 50,
+        "cycle": 0,
+        "status": "active",
+        "category": "kanban"
+    },
+    {
         "epc_id": "68656c61",
         "name": "Spion",
         "quantity": 100,
@@ -49,11 +57,11 @@
     },
     {
         "epc_id": "68656c6d",
-        "name": "trigger",
-        "quantity": null,
+        "name": "Steer",
+        "quantity": 50,
         "cycle": 0,
         "status": "active",
-        "category": "trigger"
+        "category": "kanban"
     },
     {
         "epc_id": "68656c78",

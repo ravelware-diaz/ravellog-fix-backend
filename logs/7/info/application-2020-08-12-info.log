@@ -1,0 +1,388 @@
+[32m2020-08-12 12:07:14 - info: Initial process, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 12:07:14 - info: Data evaluated as not null, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 12:07:14 - info: Begin validation, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 12:07:15 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:07:15 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 12:07:15 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 12:07:16 - info: Initial process, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 12:07:16 - info: Data evaluated as not null, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 12:07:16 - info: Begin validation, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 12:07:16 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:07:16 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 12:07:16 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 12:07:19 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 12:07:19 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 12:07:19 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 12:07:19 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 12:07:19 - info: Read pooled data from temp file, processed data: ["[{\"id\":10,\"epc_id\":\"68656c7a\",\"category\":\"skid\"},{\"id\":8,\"epc_id\":\"68656c78\",\"category\":\"kanban\"}]","[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":2,\"epc_id\":\"68656c61\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 12:07:19 - info: Cleaning data pooled in temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 12:07:19 - info: Filter data to get only unique, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 12:07:19 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 12:07:19 - info: Insertion function begin, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 12:07:19 - info: Begin transaction, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 12:07:19 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":10,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 12:07:19 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c78","category":"kanban","skid_tag_id":4,"epc_tag_id":8,"date_in":"2020-08-12T05:07:19.568Z"},{"epc_id":"68656c6c","category":"kanban","skid_tag_id":4,"epc_tag_id":1,"date_in":"2020-08-12T05:07:19.568Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":4,"epc_tag_id":2,"date_in":"2020-08-12T05:07:19.568Z"}][39m
+[32m2020-08-12 12:07:19 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c78","category":"kanban","skid_tag_id":4,"epc_tag_id":8,"date_in":"2020-08-12T05:07:19.568Z"},{"epc_id":"68656c6c","category":"kanban","skid_tag_id":4,"epc_tag_id":1,"date_in":"2020-08-12T05:07:19.568Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":4,"epc_tag_id":2,"date_in":"2020-08-12T05:07:19.568Z"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:07:19 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 12:07:19 - info: Transaction Success[39m
+[32m2020-08-12 12:08:06 - info: Initial process, processed data: [39m
+[32m2020-08-12 12:08:06 - info: Data evaluated as null, processed data: [39m
+[32m2020-08-12 12:45:59 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:45:59 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:45:59 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:45:59 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:46:21 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:21 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:21 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:21 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:46:50 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:50 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:50 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:46:50 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:47:33 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:47:33 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:47:33 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:47:33 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:48:01 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:01 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:01 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:01 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:48:35 - info: Initial process, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:35 - info: Data evaluated as not null, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:35 - info: Begin validation, processed data: 68656c7a21312[39m
+[32m2020-08-12 12:48:35 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:48:35 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 12:48:35 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 12:48:50 - info: Initial process, processed data: asdsadas[39m
+[32m2020-08-12 12:48:50 - info: Data evaluated as not null, processed data: asdsadas[39m
+[32m2020-08-12 12:48:50 - info: Begin validation, processed data: asdsadas[39m
+[32m2020-08-12 12:48:50 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 12:48:50 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 12:48:50 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 13:03:13 - info: Initial process, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:03:13 - info: Data evaluated as not null, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:03:13 - info: Begin validation, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:03:13 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:03:13 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:03:13 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:03:16 - info: Initial process, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:03:16 - info: Data evaluated as not null, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:03:16 - info: Begin validation, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:03:16 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:03:16 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:03:16 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:03:21 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:03:21 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:03:21 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:03:21 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:03:21 - info: Read pooled data from temp file, processed data: ["[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":2,\"epc_id\":\"68656c61\",\"category\":\"kanban\"}]","[{\"id\":10,\"epc_id\":\"68656c7a\",\"category\":\"skid\"},{\"id\":8,\"epc_id\":\"68656c78\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 13:03:21 - info: Cleaning data pooled in temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:03:21 - info: Filter data to get only unique, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:03:21 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:03:21 - info: Insertion function begin, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:03:21 - info: Begin transaction, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:03:21 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":10,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 13:03:21 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":5,"epc_tag_id":1,"date_in":"2020-08-12T06:03:21.784Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":5,"epc_tag_id":2,"date_in":"2020-08-12T06:03:21.784Z"},{"epc_id":"68656c78","category":"kanban","skid_tag_id":5,"epc_tag_id":8,"date_in":"2020-08-12T06:03:21.784Z"}][39m
+[32m2020-08-12 13:03:21 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":5,"epc_tag_id":1,"date_in":"2020-08-12T06:03:21.784Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":5,"epc_tag_id":2,"date_in":"2020-08-12T06:03:21.784Z"},{"epc_id":"68656c78","category":"kanban","skid_tag_id":5,"epc_tag_id":8,"date_in":"2020-08-12T06:03:21.784Z"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:03:21 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 13:03:21 - info: Transaction Success[39m
+[32m2020-08-12 13:04:16 - info: Initial process, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:04:16 - info: Data evaluated as not null, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:04:16 - info: Begin validation, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:04:16 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:04:16 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:04:16 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:04:20 - info: Initial process, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:04:20 - info: Data evaluated as not null, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:04:20 - info: Begin validation, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:04:20 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:04:20 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:04:20 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:04:26 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:04:26 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:04:26 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:04:26 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:04:26 - info: Read pooled data from temp file, processed data: ["[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":2,\"epc_id\":\"68656c61\",\"category\":\"kanban\"}]","[{\"id\":10,\"epc_id\":\"68656c7a\",\"category\":\"skid\"},{\"id\":8,\"epc_id\":\"68656c78\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 13:04:26 - info: Cleaning data pooled in temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:04:26 - info: Filter data to get only unique, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:04:26 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:04:26 - info: Insertion function begin, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:04:26 - info: Begin transaction, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"}]}[39m
+[32m2020-08-12 13:04:26 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":10,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 13:04:26 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":6,"epc_tag_id":1,"date_in":"2020-08-12T06:04:26.351Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":6,"epc_tag_id":2,"date_in":"2020-08-12T06:04:26.351Z"},{"epc_id":"68656c78","category":"kanban","skid_tag_id":6,"epc_tag_id":8,"date_in":"2020-08-12T06:04:26.351Z"}][39m
+[32m2020-08-12 13:04:26 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":6,"epc_tag_id":1,"date_in":"2020-08-12T06:04:26.351Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":6,"epc_tag_id":2,"date_in":"2020-08-12T06:04:26.351Z"},{"epc_id":"68656c78","category":"kanban","skid_tag_id":6,"epc_tag_id":8,"date_in":"2020-08-12T06:04:26.351Z"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:04:26 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 13:04:26 - info: Transaction Success[39m
+[32m2020-08-12 13:06:09 - info: Initial process, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:06:09 - info: Data evaluated as not null, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:06:09 - info: Begin validation, processed data: 68656c7a,68656c78[39m
+[32m2020-08-12 13:06:09 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:06:09 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:06:09 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"}][39m
+[32m2020-08-12 13:06:12 - info: Initial process, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:06:12 - info: Data evaluated as not null, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:06:12 - info: Begin validation, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 13:06:12 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:06:12 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:06:12 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:06:14 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:06:14 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:06:14 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:06:14 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:06:14 - info: Read pooled data from temp file, processed data: ["[{\"id\":10,\"epc_id\":\"68656c7a\",\"category\":\"skid\"},{\"id\":8,\"epc_id\":\"68656c78\",\"category\":\"kanban\"}]","[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":2,\"epc_id\":\"68656c61\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 13:06:14 - info: Cleaning data pooled in temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:06:14 - info: Filter data to get only unique, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 13:06:14 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 13:06:14 - info: Insertion function begin, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 13:06:14 - info: Begin transaction, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 13:06:14 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":10,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 13:06:15 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c78","category":"kanban","skid_tag_id":7,"epc_tag_id":8,"date_in":"2020-08-12T06:06:15.004Z"},{"epc_id":"68656c6c","category":"kanban","skid_tag_id":7,"epc_tag_id":1,"date_in":"2020-08-12T06:06:15.004Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":7,"epc_tag_id":2,"date_in":"2020-08-12T06:06:15.004Z"}][39m
+[32m2020-08-12 13:06:15 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c78","category":"kanban","skid_tag_id":7,"epc_tag_id":8,"date_in":"2020-08-12T06:06:15.004Z"},{"epc_id":"68656c6c","category":"kanban","skid_tag_id":7,"epc_tag_id":1,"date_in":"2020-08-12T06:06:15.004Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":7,"epc_tag_id":2,"date_in":"2020-08-12T06:06:15.004Z"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 13:06:15 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 13:06:15 - info: Transaction Success[39m
+[32m2020-08-12 13:11:37 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:11:37 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:11:37 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:11:37 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:11:37 - info: Read pooled data from temp file, processed data: [][39m
+[32m2020-08-12 13:11:37 - info: Cleaning data pooled in temp file, processed data: [][39m
+[32m2020-08-12 13:11:37 - info: Filter data to get only unique, processed data: [][39m
+[32m2020-08-12 13:11:37 - info: Classify data and separate between skid and kanban, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:11:37 - info: Insertion function begin, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:11:37 - info: Begin transaction, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:11:37 - info: Data has been prepared and proceed to skidTag model insertion, processed data: undefined[39m
+[32m2020-08-12 13:14:46 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:14:46 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:14:46 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:14:46 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:14:46 - info: Read pooled data from temp file, processed data: [][39m
+[32m2020-08-12 13:14:46 - info: Cleaning data pooled in temp file, processed data: [][39m
+[32m2020-08-12 13:14:46 - info: Filter data to get only unique, processed data: [][39m
+[32m2020-08-12 13:14:46 - info: Classify data and separate between skid and kanban, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:14:46 - info: Insertion function begin, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:14:46 - info: Begin transaction, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:14:46 - info: Data has been prepared and proceed to skidTag model insertion, processed data: undefined[39m
+[32m2020-08-12 13:15:08 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:15:08 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:15:08 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:15:08 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:15:08 - info: Read pooled data from temp file, processed data: [][39m
+[32m2020-08-12 13:15:08 - info: Cleaning data pooled in temp file, processed data: [][39m
+[32m2020-08-12 13:15:08 - info: Filter data to get only unique, processed data: [][39m
+[32m2020-08-12 13:15:08 - info: Classify data and separate between skid and kanban, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:15:08 - info: Insertion function begin, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:15:08 - info: Begin transaction, processed data: {"skid":[],"kanban":[]}[39m
+[32m2020-08-12 13:15:08 - info: Data has been prepared and proceed to skidTag model insertion, processed data: undefined[39m
+[32m2020-08-12 13:15:34 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:15:34 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:15:34 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:15:34 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 13:15:52 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 13:15:52 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 13:15:52 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 13:15:52 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 14:49:41 - info: Initial process, processed data: 68656c7a,68656c70,68656c6f[39m
+[32m2020-08-12 14:49:41 - info: Data evaluated as not null, processed data: 68656c7a,68656c70,68656c6f[39m
+[32m2020-08-12 14:49:41 - info: Begin validation, processed data: 68656c7a,68656c70,68656c6f[39m
+[32m2020-08-12 14:49:41 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:49:41 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}][39m
+[32m2020-08-12 14:49:41 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}][39m
+[32m2020-08-12 14:50:32 - info: Initial process, processed data: undefined[39m
+[32m2020-08-12 14:51:24 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 14:51:24 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 14:51:24 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 14:51:24 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 14:51:24 - info: Read pooled data from temp file, processed data: ["[{\"id\":10,\"epc_id\":\"68656c7a\",\"category\":\"skid\"},{\"id\":3,\"epc_id\":\"68656c70\",\"category\":\"kanban\"},{\"id\":4,\"epc_id\":\"68656c6f\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 14:51:24 - info: Cleaning data pooled in temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}][39m
+[32m2020-08-12 14:51:24 - info: Filter data to get only unique, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}][39m
+[32m2020-08-12 14:51:24 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}]}[39m
+[32m2020-08-12 14:51:24 - info: Insertion function begin, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}]}[39m
+[32m2020-08-12 14:51:24 - info: Begin transaction, processed data: {"skid":[{"id":10,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"}]}[39m
+[32m2020-08-12 14:51:24 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":10,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 14:51:24 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c70","category":"kanban","skid_tag_id":1,"epc_tag_id":3,"date_in":"2020-08-12T07:51:24.058Z"},{"epc_id":"68656c6f","category":"kanban","skid_tag_id":1,"epc_tag_id":4,"date_in":"2020-08-12T07:51:24.058Z"}][39m
+[32m2020-08-12 14:51:24 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c70","category":"kanban","skid_tag_id":1,"epc_tag_id":3,"date_in":"2020-08-12T07:51:24.058Z"},{"epc_id":"68656c6f","category":"kanban","skid_tag_id":1,"epc_tag_id":4,"date_in":"2020-08-12T07:51:24.058Z"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:51:24 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 14:51:24 - info: Transaction Success[39m
+[32m2020-08-12 14:52:12 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 14:52:12 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 14:52:12 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 14:52:12 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 14:53:10 - info: Initial process, processed data: 68656c73[39m
+[32m2020-08-12 14:53:10 - info: Data evaluated as not null, processed data: 68656c73[39m
+[32m2020-08-12 14:53:10 - info: Begin validation, processed data: 68656c73[39m
+[32m2020-08-12 14:53:10 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:53:10 - info: Validated data ready, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"}][39m
+[32m2020-08-12 14:53:10 - info: Pooled data and write to temp file, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"}][39m
+[32m2020-08-12 14:53:50 - info: Initial process, processed data: 68656c70,68656c70[39m
+[32m2020-08-12 14:53:50 - info: Data evaluated as not null, processed data: 68656c70,68656c70[39m
+[32m2020-08-12 14:53:50 - info: Begin validation, processed data: 68656c70,68656c70[39m
+[32m2020-08-12 14:53:50 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:53:50 - info: Validated data ready, processed data: [{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"}][39m
+[32m2020-08-12 14:53:50 - info: Pooled data and write to temp file, processed data: [{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"}][39m
+[32m2020-08-12 14:54:14 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 14:54:14 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 14:54:14 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 14:54:14 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 14:54:14 - info: Read pooled data from temp file, processed data: ["[{\"id\":9,\"epc_id\":\"68656c73\",\"category\":\"skid\"}]","[{\"id\":3,\"epc_id\":\"68656c70\",\"category\":\"kanban\"},{\"id\":3,\"epc_id\":\"68656c70\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 14:54:14 - info: Cleaning data pooled in temp file, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"}][39m
+[32m2020-08-12 14:54:14 - info: Filter data to get only unique, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":3,"epc_id":"68656c70","category":"kanban"}][39m
+[32m2020-08-12 14:54:14 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"}]}[39m
+[32m2020-08-12 14:54:14 - info: Insertion function begin, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"}]}[39m
+[32m2020-08-12 14:54:14 - info: Begin transaction, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":3,"epc_id":"68656c70","category":"kanban"}]}[39m
+[32m2020-08-12 14:54:14 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":9,"epc_id":"68656c73","category":"skid"}[39m
+[32m2020-08-12 14:54:14 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c70","category":"kanban","skid_tag_id":2,"epc_tag_id":3,"date_in":"2020-08-12T07:54:14.122Z"}][39m
+[32m2020-08-12 14:54:14 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c70","category":"kanban","skid_tag_id":2,"epc_tag_id":3,"date_in":"2020-08-12T07:54:14.122Z"},{"id":9,"epc_id":"68656c73","category":"skid"}][39m
+[32m2020-08-12 14:54:14 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 14:54:14 - info: Transaction Success[39m
+[32m2020-08-12 14:57:59 - info: Initial process, processed data: 68656c73,68656c73,68656c6d[39m
+[32m2020-08-12 14:57:59 - info: Data evaluated as not null, processed data: 68656c73,68656c73,68656c6d[39m
+[32m2020-08-12 14:57:59 - info: Begin validation, processed data: 68656c73,68656c73,68656c6d[39m
+[32m2020-08-12 14:57:59 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:57:59 - info: Validated data ready, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":7,"epc_id":"68656c6d","category":"kanban"}][39m
+[32m2020-08-12 14:57:59 - info: Pooled data and write to temp file, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":7,"epc_id":"68656c6d","category":"kanban"}][39m
+[32m2020-08-12 14:58:07 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 14:58:07 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 14:58:07 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 14:58:07 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 14:58:07 - info: Read pooled data from temp file, processed data: ["[{\"id\":9,\"epc_id\":\"68656c73\",\"category\":\"skid\"},{\"id\":9,\"epc_id\":\"68656c73\",\"category\":\"skid\"},{\"id\":7,\"epc_id\":\"68656c6d\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 14:58:07 - info: Cleaning data pooled in temp file, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":7,"epc_id":"68656c6d","category":"kanban"}][39m
+[32m2020-08-12 14:58:07 - info: Filter data to get only unique, processed data: [{"id":9,"epc_id":"68656c73","category":"skid"},{"id":7,"epc_id":"68656c6d","category":"kanban"}][39m
+[32m2020-08-12 14:58:07 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":7,"epc_id":"68656c6d","category":"kanban"}]}[39m
+[32m2020-08-12 14:58:07 - info: Insertion function begin, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":7,"epc_id":"68656c6d","category":"kanban"}]}[39m
+[32m2020-08-12 14:58:07 - info: Begin transaction, processed data: {"skid":[{"id":9,"epc_id":"68656c73","category":"skid"}],"kanban":[{"id":7,"epc_id":"68656c6d","category":"kanban"}]}[39m
+[32m2020-08-12 14:58:07 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":9,"epc_id":"68656c73","category":"skid"}[39m
+[32m2020-08-12 14:58:07 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c6d","category":"kanban","skid_tag_id":3,"epc_tag_id":7,"date_in":"2020-08-12T07:58:07.705Z"}][39m
+[32m2020-08-12 14:58:07 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c6d","category":"kanban","skid_tag_id":3,"epc_tag_id":7,"date_in":"2020-08-12T07:58:07.705Z"},{"id":9,"epc_id":"68656c73","category":"skid"}][39m
+[32m2020-08-12 14:58:07 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 14:58:07 - info: Transaction Success[39m
+[32m2020-08-12 14:58:44 - info: Initial process, processed data: sad123aa[39m
+[32m2020-08-12 14:58:44 - info: Data evaluated as not null, processed data: sad123aa[39m
+[32m2020-08-12 14:58:44 - info: Begin validation, processed data: sad123aa[39m
+[32m2020-08-12 14:58:44 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:58:44 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 14:58:44 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 14:59:15 - info: Initial process, processed data: 68656c7[39m
+[32m2020-08-12 14:59:15 - info: Data evaluated as not null, processed data: 68656c7[39m
+[32m2020-08-12 14:59:15 - info: Begin validation, processed data: 68656c7[39m
+[32m2020-08-12 14:59:15 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:59:15 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 14:59:15 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 14:59:24 - info: Initial process, processed data: 68656c7a1[39m
+[32m2020-08-12 14:59:24 - info: Data evaluated as not null, processed data: 68656c7a1[39m
+[32m2020-08-12 14:59:24 - info: Begin validation, processed data: 68656c7a1[39m
+[32m2020-08-12 14:59:24 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 14:59:24 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 14:59:24 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 15:24:27 - info: Initial process, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:24:27 - info: Data evaluated as not null, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:24:27 - info: Begin validation, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:24:27 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:24:27 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:24:27 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:24:47 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 15:24:47 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 15:24:47 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 15:24:47 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 15:24:47 - info: Read pooled data from temp file, processed data: ["[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"}]"][39m
+[32m2020-08-12 15:24:47 - info: Cleaning data pooled in temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:24:47 - info: Filter data to get only unique, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:24:47 - info: Classify data and separate between skid and kanban, processed data: {"skid":[],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"}]}[39m
+[32m2020-08-12 15:24:47 - info: Insertion function begin, processed data: {"skid":[],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"}]}[39m
+[32m2020-08-12 15:24:47 - info: Begin transaction, processed data: {"skid":[],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"}]}[39m
+[32m2020-08-12 15:24:47 - info: Data has been prepared and proceed to skidTag model insertion, processed data: undefined[39m
+[32m2020-08-12 15:26:41 - info: Initial process, processed data: 68656c7a[39m
+[32m2020-08-12 15:26:41 - info: Data evaluated as not null, processed data: 68656c7a[39m
+[32m2020-08-12 15:26:41 - info: Begin validation, processed data: 68656c7a[39m
+[32m2020-08-12 15:26:41 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:26:41 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:26:41 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:26:51 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 15:26:51 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 15:26:51 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 15:26:51 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:26:51 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 15:26:51 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 15:26:59 - info: Initial process, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:26:59 - info: Data evaluated as not null, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:26:59 - info: Begin validation, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:26:59 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:26:59 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:26:59 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:27:03 - info: Initial process, processed data: 68656c7a[39m
+[32m2020-08-12 15:27:03 - info: Data evaluated as not null, processed data: 68656c7a[39m
+[32m2020-08-12 15:27:03 - info: Begin validation, processed data: 68656c7a[39m
+[32m2020-08-12 15:27:03 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:27:03 - info: Validated data ready, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:27:03 - info: Pooled data and write to temp file, processed data: [{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:27:07 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 15:27:07 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 15:27:07 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 15:27:07 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:27:07 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 15:27:07 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 15:27:33 - info: Initial process, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:27:33 - info: Data evaluated as not null, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:27:33 - info: Begin validation, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:27:33 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c61","category":"kanban"},{"id":3,"epc_id":"68656c70","category":"kanban"},{"id":4,"epc_id":"68656c6f","category":"kanban"},{"id":5,"epc_id":"68656c65","category":"kanban"},{"id":6,"epc_id":"68656c75","category":"kanban"},{"id":7,"epc_id":"68656c6d","category":"kanban"},{"id":8,"epc_id":"68656c78","category":"kanban"},{"id":9,"epc_id":"68656c73","category":"skid"},{"id":10,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:27:33 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:27:33 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"}][39m
+[32m2020-08-12 15:28:07 - info: Initial process, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:28:07 - info: Data evaluated as not null, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:28:07 - info: Begin validation, processed data: 68656c6c,68656c7d[39m
+[32m2020-08-12 15:28:07 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":4,"epc_id":"68656c70","category":"kanban"},{"id":5,"epc_id":"68656c6f","category":"kanban"},{"id":6,"epc_id":"68656c65","category":"kanban"},{"id":7,"epc_id":"68656c75","category":"kanban"},{"id":8,"epc_id":"68656c6d","category":"kanban"},{"id":9,"epc_id":"68656c78","category":"kanban"},{"id":10,"epc_id":"68656c73","category":"skid"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:07 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"}][39m
+[32m2020-08-12 15:28:07 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"}][39m
+[32m2020-08-12 15:28:13 - info: Initial process, processed data: 68656c7a[39m
+[32m2020-08-12 15:28:13 - info: Data evaluated as not null, processed data: 68656c7a[39m
+[32m2020-08-12 15:28:13 - info: Begin validation, processed data: 68656c7a[39m
+[32m2020-08-12 15:28:13 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":4,"epc_id":"68656c70","category":"kanban"},{"id":5,"epc_id":"68656c6f","category":"kanban"},{"id":6,"epc_id":"68656c65","category":"kanban"},{"id":7,"epc_id":"68656c75","category":"kanban"},{"id":8,"epc_id":"68656c6d","category":"kanban"},{"id":9,"epc_id":"68656c78","category":"kanban"},{"id":10,"epc_id":"68656c73","category":"skid"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:13 - info: Validated data ready, processed data: [{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:14 - info: Pooled data and write to temp file, processed data: [{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:17 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 15:28:17 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 15:28:17 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 15:28:17 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":4,"epc_id":"68656c70","category":"kanban"},{"id":5,"epc_id":"68656c6f","category":"kanban"},{"id":6,"epc_id":"68656c65","category":"kanban"},{"id":7,"epc_id":"68656c75","category":"kanban"},{"id":8,"epc_id":"68656c6d","category":"kanban"},{"id":9,"epc_id":"68656c78","category":"kanban"},{"id":10,"epc_id":"68656c73","category":"skid"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:17 - info: Validated data ready, processed data: [][39m
+[32m2020-08-12 15:28:17 - info: Pooled data and write to temp file, processed data: [][39m
+[32m2020-08-12 15:28:55 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 15:28:55 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 15:28:55 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 15:28:55 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 15:28:55 - info: Read pooled data from temp file, processed data: ["[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":2,\"epc_id\":\"68656c7d\",\"category\":\"kanban\"}]","[{\"id\":11,\"epc_id\":\"68656c7a\",\"category\":\"skid\"}]"][39m
+[32m2020-08-12 15:28:55 - info: Cleaning data pooled in temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:55 - info: Filter data to get only unique, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:55 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"}]}[39m
+[32m2020-08-12 15:28:55 - info: Insertion function begin, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"}]}[39m
+[32m2020-08-12 15:28:55 - info: Begin transaction, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"}]}[39m
+[32m2020-08-12 15:28:55 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":11,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 15:28:55 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":1,"epc_tag_id":1,"date_in":"2020-08-12T08:28:55.455Z"},{"epc_id":"68656c7d","category":"kanban","skid_tag_id":1,"epc_tag_id":2,"date_in":"2020-08-12T08:28:55.455Z"}][39m
+[32m2020-08-12 15:28:55 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":1,"epc_tag_id":1,"date_in":"2020-08-12T08:28:55.455Z"},{"epc_id":"68656c7d","category":"kanban","skid_tag_id":1,"epc_tag_id":2,"date_in":"2020-08-12T08:28:55.455Z"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 15:28:55 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 15:28:55 - info: Transaction Success[39m
+[32m2020-08-12 16:09:09 - info: Initial process, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 16:09:09 - info: Data evaluated as not null, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 16:09:09 - info: Begin validation, processed data: 68656c6c,68656c61[39m
+[32m2020-08-12 16:09:09 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":4,"epc_id":"68656c70","category":"kanban"},{"id":5,"epc_id":"68656c6f","category":"kanban"},{"id":6,"epc_id":"68656c65","category":"kanban"},{"id":7,"epc_id":"68656c75","category":"kanban"},{"id":8,"epc_id":"68656c6d","category":"kanban"},{"id":9,"epc_id":"68656c78","category":"kanban"},{"id":10,"epc_id":"68656c73","category":"skid"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:09 - info: Validated data ready, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 16:09:09 - info: Pooled data and write to temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"}][39m
+[32m2020-08-12 16:09:20 - info: Initial process, processed data: 68656c7a[39m
+[32m2020-08-12 16:09:20 - info: Data evaluated as not null, processed data: 68656c7a[39m
+[32m2020-08-12 16:09:20 - info: Begin validation, processed data: 68656c7a[39m
+[32m2020-08-12 16:09:20 - info: Reference data for comparison, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":2,"epc_id":"68656c7d","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":4,"epc_id":"68656c70","category":"kanban"},{"id":5,"epc_id":"68656c6f","category":"kanban"},{"id":6,"epc_id":"68656c65","category":"kanban"},{"id":7,"epc_id":"68656c75","category":"kanban"},{"id":8,"epc_id":"68656c6d","category":"kanban"},{"id":9,"epc_id":"68656c78","category":"kanban"},{"id":10,"epc_id":"68656c73","category":"skid"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:20 - info: Validated data ready, processed data: [{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:20 - info: Pooled data and write to temp file, processed data: [{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:25 - info: Initial process, processed data: complete[39m
+[32m2020-08-12 16:09:25 - info: Data evaluated as not null, processed data: complete[39m
+[32m2020-08-12 16:09:25 - info: Begin validation, processed data: complete[39m
+[32m2020-08-12 16:09:25 - info: Data input evaluated as trigger and begin to process for insertion, processed data: complete[39m
+[32m2020-08-12 16:09:25 - info: Read pooled data from temp file, processed data: ["[{\"id\":1,\"epc_id\":\"68656c6c\",\"category\":\"kanban\"},{\"id\":3,\"epc_id\":\"68656c61\",\"category\":\"kanban\"}]","[{\"id\":11,\"epc_id\":\"68656c7a\",\"category\":\"skid\"}]"][39m
+[32m2020-08-12 16:09:25 - info: Cleaning data pooled in temp file, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:25 - info: Filter data to get only unique, processed data: [{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:25 - info: Classify data and separate between skid and kanban, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 16:09:25 - info: Insertion function begin, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 16:09:25 - info: Begin transaction, processed data: {"skid":[{"id":11,"epc_id":"68656c7a","category":"skid"}],"kanban":[{"id":1,"epc_id":"68656c6c","category":"kanban"},{"id":3,"epc_id":"68656c61","category":"kanban"}]}[39m
+[32m2020-08-12 16:09:25 - info: Data has been prepared and proceed to skidTag model insertion, processed data: {"id":11,"epc_id":"68656c7a","category":"skid"}[39m
+[32m2020-08-12 16:09:25 - info: Data has been prepared and proceed to kanbanTag model insertion, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":2,"epc_tag_id":1,"date_in":"2020-08-12T09:09:25.744Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":2,"epc_tag_id":3,"date_in":"2020-08-12T09:09:25.744Z"}][39m
+[32m2020-08-12 16:09:25 - info: Data has been prepared and proceed to epcTag model update cycle, processed data: [{"epc_id":"68656c6c","category":"kanban","skid_tag_id":2,"epc_tag_id":1,"date_in":"2020-08-12T09:09:25.744Z"},{"epc_id":"68656c61","category":"kanban","skid_tag_id":2,"epc_tag_id":3,"date_in":"2020-08-12T09:09:25.744Z"},{"id":11,"epc_id":"68656c7a","category":"skid"}][39m
+[32m2020-08-12 16:09:25 - info: Clean up temp file for next pool, processed data: [39m
+[32m2020-08-12 16:09:25 - info: Transaction Success[39m

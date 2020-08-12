@@ -1,4 +1,4 @@
-const { epc_tag } = require('../models')
+const { epc_tag, skid_tag, kanban_tag } = require('../models')
 
 class EpcTagController {
     static updateCycle(data, t) {
@@ -9,12 +9,23 @@ class EpcTagController {
                 return el.epc_tag_id
             }
         })
-        console.log(data)
-        return epc_tag.update({ cycle: +1 },{
-            where: {
-                id: data
+        return epc_tag.increment({ cycle: +1 }, { where: { id: data } }, { transaction: t })
+    }
+
+    static queryEpc(req, res, next) {
+        epc_tag.findAll({
+            include: {
+                all: true,
+                nested: true
             }
-        }, { transaction: t })
+        })
+        .then(result => {
+            console.log(result)
+            return res.status(200).json(result)
+        })
+        .catch(err => {
+            return next(err)
+        })
     }
 }
 
