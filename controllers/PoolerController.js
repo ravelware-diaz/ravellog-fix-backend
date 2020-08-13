@@ -136,19 +136,11 @@ class PoolerController {
                     skid: [ ...data.skid ],
                     all: [ ...data.kanban, ...data.skid ]
                 }
-                console.log(preparedData, 'PREPARED DATA')
                 const resultBatchOpt = await BatchController.insert(t)
-                console.log(resultBatchOpt, 'INI RESULT BATCH')
                 loggerInfo.info(`Data has been prepared and proceed to skidTag model insertion, processed data: ${JSON.stringify(preparedData.skid)}`)
-
-                const resultSkidOpt = await SkidKanbanCombineController.insert({ tag: preparedData.skid, batch: resultBatchOpt }, t)
-                console.log(resultSkidOpt, '<<<<<<<<<<RESULT SKID')
-
-                
+                const resultSkidOpt = await SkidKanbanCombineController.insert({ tag: preparedData.skid, batch: resultBatchOpt }, t)                
                 loggerInfo.info(`Data has been prepared and proceed to kanbanTag model insertion, processed data: ${JSON.stringify(preparedData.kanban)}`)
                 const resultKanbanOpt = await SkidKanbanCombineController.insert({ tag: preparedData.kanban, batch: resultBatchOpt, skid: resultSkidOpt }, t)                
-                console.log(resultKanbanOpt, '<<<<<<<<<<RESULT KANBAN')
-
                 loggerInfo.info(`Data has been prepared and proceed to epcTag model update cycle, processed data: ${JSON.stringify(preparedData.all)}`)
                 const resultEpcOpt = await EpcTagController.updateCycle(preparedData.all, t)
                 fs.writeFileSync('./pool_temp.txt', '')

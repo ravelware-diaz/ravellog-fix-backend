@@ -20,7 +20,6 @@ class EpcTagController {
             }
         })
         .then(result => {
-            console.log(result)
             return res.status(200).json(result)
         })
         .catch(err => {
