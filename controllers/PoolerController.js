@@ -3,6 +3,8 @@ const { epc_tag, sequelize } = require('../models')
 const KanbanTagController = require('./KanbanTagController')
 const SkidTagController = require('./SkidTagController')
 const EpcTagController = require('./EpcTagController')
+const SkidKanbanCombineController = require('./SkidKanbanCombineController')
+const BatchController = require('./BatchController')
 const { loggerError, loggerInfo } = require('../helpers/Winston')
 
 class PoolerController {
@@ -130,21 +132,24 @@ class PoolerController {
             try {
                 //data preparation ensure all data comply the insertion constraint
                 let preparedData = {
-                    kanban: [],
-                    skid: data.skid[0],
+                    kanban: [ ...data.kanban ],
+                    skid: [ ...data.skid ],
                     all: [ ...data.kanban, ...data.skid ]
                 }
+                console.log(preparedData, 'PREPARED DATA')
                 loggerInfo.info(`Data has been prepared and proceed to skidTag model insertion, processed data: ${JSON.stringify(preparedData.skid)}`)
                 const resultSkidOpt = await SkidTagController.insert(preparedData.skid, t)
-                preparedData.kanban = data.kanban.map(el => {
-                    el.skid_tag_id = resultSkidOpt.dataValues.id
-                    el.epc_tag_id = el.id
-                    el.date_in = new Date().toISOString()
-                    delete el.id
-                    return el
-                })
+                console.log(resultSkidOpt, '<<<<<<<<<<RESULT SKID')
+
+                
                 loggerInfo.info(`Data has been prepared and proceed to kanbanTag model insertion, processed data: ${JSON.stringify(preparedData.kanban)}`)
-                const resultKanbanOpt = await KanbanTagController.insert(preparedData.kanban, t)
+                const resultKanbanOpt = await KanbanTagController.insert(preparedData.kanban, t)                
+                console.log(resultKanbanOpt, '<<<<<<<<<<RESULT KANBAN')
+
+                const resultBatchOpt = await BatchController.insert(t)
+                console.log(resultBatchOpt, 'INI RESULT BATCH')
+
+                const resultSkidKanbanCombineOpt = await SkidKanbanCombineController.insert({ kanban: resultKanbanOpt, skid: resultSkidOpt, batch: resultBatchOpt }, t)
                 loggerInfo.info(`Data has been prepared and proceed to epcTag model update cycle, processed data: ${JSON.stringify(preparedData.all)}`)
                 const resultEpcOpt = await EpcTagController.updateCycle(preparedData.all, t)
                 fs.writeFileSync('./pool_temp.txt', '')
@@ -196,7 +201,7 @@ class PoolerController {
                     return rejects(err)
                 })
             } else {
-                loggerError.error(`Some internal server error in insertion function occured with message: No data in temporary file`)
+                loggerError.error(`Some internal server error in completePool function occured with message: No data in temporary file`)
                 return rejects({
                     name: 'InternalServer',
                     errors: [{ message: 'No data in pooling temp file!' }]

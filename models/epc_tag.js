@@ -43,8 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'epc_tag',
   });
   epc_tag.associate = function(models) {
-    epc_tag.hasMany(models.kanban_tag, { foreignKey: 'epc_tag_id' })
-    epc_tag.hasMany(models.skid_tag, { foreignKey: 'epc_tag_id' })
+    epc_tag.hasMany(models.skid_kanban_combine, { foreignKey: 'epc_tag_id' })
   }
 
   return epc_tag;

@@ -1,13 +1,16 @@
-const { skid_tag, kanban_tag, epc_tag, sequelize } = require('../models')
+const { skid_tag, sequelize } = require('../models')
 const { loggerError } = require('../helpers/Winston')
 
 class SkidTagController {
     static insert(data, t) {
-        let preparedData = {
-            epc_tag_id: data.id,
-            date_in: new Date().toISOString()
-        }
-        return skid_tag.create(preparedData, { transaction: t })
+        data = data.map(el => {
+            return {
+                epc_tag_id: el.id,
+                date_in: new Date().toISOString()
+            }
+        })
+        console.log(data, 'INI SKIDTAG DATA')
+        return skid_tag.bulkCreate(data, { transaction: t })
     }
 
     static querySkid(req, res, next) {
