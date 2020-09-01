@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('skid_tags', {
+    await queryInterface.createTable('batches', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -9,16 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       date_in: {
-        allowNull: false,
         type: Sequelize.DATE
-      },
-      epc_tag_id: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'epc_tags',
-          key: 'id'
-        }
       },
       createdAt: {
         allowNull: false,
@@ -31,6 +22,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('skid_tags');
+    await queryInterface.dropTable('batches');
   }
 };

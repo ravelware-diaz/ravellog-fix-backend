@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class skid_tag extends Model {
+  class batch extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -15,21 +15,15 @@ module.exports = (sequelize, DataTypes) => {
     get date_in() {
       return this.date_in
     }
-    get epc_tag_id() {
-      return this.epc_tag_id
-    }
   };
-  skid_tag.init({
-    date_in: DataTypes.DATE,
-    epc_tag_id: DataTypes.INTEGER
+  batch.init({
+    date_in: DataTypes.DATE
   }, {
     sequelize,
-    modelName: 'skid_tag',
+    modelName: 'batch',
   });
-
-  skid_tag.associate = function(models) {
-    skid_tag.belongsTo(models.epc_tag, { foreignKey: 'epc_tag_id' })
-    skid_tag.hasMany(models.kanban_tag, { foreignKey: 'skid_tag_id' })
+  batch.associate = function(models) {
+    batch.hasMany(models.skid_kanban_combine, { foreignKey: 'batch_id' })
   }
-  return skid_tag;
+  return batch;
 };
